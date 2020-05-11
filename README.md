@@ -1,8 +1,5 @@
 # react-native-flatlist-header-animated
 
-## Install
-> npm i react-native-flatlist-header-animated
-
 ![SliderBox](assets/demo.gif)
 
 ## Custom FlatlistHeader
@@ -16,6 +13,9 @@
 | height | Number | Size at which the component must occupy when scrolling down  |
 | color | Color Hexadecimal | Component background color, default #333 |
 | marginImage | Number | fine adjustments to the image position when scrolling up |
+
+## Install
+> npm i react-native-flatlist-header-animated
 
 ## Usage :
 ### 1- add below import in your code :
