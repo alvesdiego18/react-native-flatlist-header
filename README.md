@@ -22,7 +22,7 @@ import { FlatlistHeader } from "react-native-flatlist-header-animated";
 ### 2- Define the props according to the documentation above or copy the example below.
 
 ```js
-<HeaderAnimated
+<FlatlistHeader
    data={data}
    renderItem={({item}) => <Item item={item} />}
    keyExtractor={item  =>  item.id}
