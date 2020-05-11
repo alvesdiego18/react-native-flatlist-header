@@ -1,6 +1,6 @@
 # react-native-flatlist-header-animated
 
-// Imagem
+![SliderBox](assets/demo.gif)
 
 **Custom FlatlistHeader**
 Component based 100% on React-Native's own Flatlist
@@ -16,17 +16,22 @@ Component based 100% on React-Native's own Flatlist
 
 ## Usage :
 ### 1- add below import in your code :
-    import { FlatlistHeader } from "react-native-flatlist-header-animated";
+```js
+import { FlatlistHeader } from "react-native-flatlist-header-animated";
+```
 ### 2- Define the props according to the documentation above or copy the example below.
 
-    <HeaderAnimated
-    	data={data}
-    	renderItem={({item}) => <Item />}
-    	keyExtractor={item  =>  item.id}
-    	icon={ <Componenet's from Icon showing }
-    	image={require(' path image ')}
-    	navBar={80}
-    	height={150}
-    	color={'#d13636'}
-    	marginImage={270}
-    />
+```js
+<HeaderAnimated
+   data={data}
+   renderItem={({item}) => <Item />}
+   keyExtractor={item  =>  item.id}
+   
+   icon={ <Componenet's from Icon showing }
+   image={require(' path image ')}
+   navBar={80}
+   height={150}
+   color={'#d13636'}
+   marginImage={270}
+/>
+```
