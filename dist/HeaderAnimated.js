@@ -52,15 +52,19 @@ function HeaderAnimated(props) {
                 <FlatList
                     {...props}
 
-                    onScroll={Animated.event([
-                        {
-                            nativeEvent: {
-                                contentOffset: {
-                                    y: moveCalc
+                    onScroll={
+                        Animated.event(
+                            [
+                                {
+                                    nativeEvent: {
+                                        contentOffset: {
+                                            y: moveCalc
+                                        }
+                                    }
                                 }
-                            }
-                        }
-                    ])}
+                            ], { useNativeDriver: false }
+                        )
+                    }
                     style={{ flex: 1 }}
                     scrollEventThrottle={1}
                 />

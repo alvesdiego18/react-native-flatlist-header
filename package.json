@@ -1,6 +1,6 @@
 {
   "name": "react-native-flatlist-header",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flatlist with a header animated show image and icons",
   "main": "index.js",
   "scripts": {
