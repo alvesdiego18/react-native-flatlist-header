@@ -1,12 +1,12 @@
 import React, { useRef } from 'react'
-import { Animated, StyleSheet, View, StatusBar, Platform, FlatList } from 'react-native'
+import { Animated, StyleSheet, View, Platform, FlatList } from 'react-native'
 
 function HeaderAnimated(props) {
 
     const moveCalc = useRef(new Animated.Value(0)).current
 
     let heightView = moveCalc.interpolate({
-        inputRange: [0, 79],
+        inputRange: [0, props.navBar ? props.navBar : 79],
         outputRange: [props.height ? props.height : 150, props.navBar ? props.navBar : 79],        
         extrapolate: 'clamp'
     });
@@ -36,7 +36,7 @@ function HeaderAnimated(props) {
                 <Animated.View style={[styles.header, { backgroundColor: props.color ? props.color : '#333', height: heightView }]}>
                     {
                         props.image &&
-                        <Animated.Image source={props.image} style={[styles.image, { height: heightImage, marginLeft: marginLeftImage, marginTop: Platform.OS === 'ios' ? 24 : 20 }]} />
+                        <Animated.Image source={props.image} style={[styles.image, { height: heightImage, marginLeft: marginLeftImage, marginTop: Platform.OS === 'ios' ? 24 : 0 }]} />
                     }
                     {
                         props.icon &&
