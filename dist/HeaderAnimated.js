@@ -16,7 +16,7 @@ function HeaderAnimated(props) {
 
     let heightImage = moveCalc.interpolate({
         inputRange: [0, orHeightView],
-        outputRange: [50, 25],
+        outputRange: [50, props.imageSize ? props.imageSize : 35],
         extrapolate: 'clamp'
     });
 
@@ -42,9 +42,9 @@ function HeaderAnimated(props) {
                         <Animated.Image source={props.image} style={[styles.image, { height: heightImage, marginLeft: marginLeftImage, marginTop: Platform.OS === 'ios' ? 24 : 0 }]} />
                     }
                     {
-                        props.icon &&
+                        props.rightItem &&
                         <Animated.View style={[styles.iconview, { opacity: opacityIcon, }]}>
-                            {props.icon}
+                            {props.rightItem}
                         </Animated.View>
                     }
                 </Animated.View>
