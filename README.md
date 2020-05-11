@@ -3,7 +3,7 @@
 ![SliderBox](assets/demo.gif)
 
 **Custom FlatlistHeader**
-Component based 100% on React-Native's own Flatlist
+> Component based 100% on React-Native's own Flatlist
 
 | Props | Value Type | Description |
 |--|--|--|
@@ -24,11 +24,11 @@ import { FlatlistHeader } from "react-native-flatlist-header-animated";
 ```js
 <HeaderAnimated
    data={data}
-   renderItem={({item}) => <Item />}
+   renderItem={({item}) => <Item item={item} />}
    keyExtractor={item  =>  item.id}
    
-   icon={/*<Componenet's from Icon showing*/}
-   image={require('path-image')}
+   icon={<Icon type='Feather' name='bell' />}
+   image={require('./src/assets/logo.png')}
    navBar={80}
    height={150}
    color={'#d13636'}
