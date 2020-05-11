@@ -5,20 +5,23 @@ function HeaderAnimated(props) {
 
     const moveCalc = useRef(new Animated.Value(0)).current
 
+    const irHeightView = props.navBar ? props.navBar : 79
+    const orHeightView = props.height ? props.height : 150
+
     let heightView = moveCalc.interpolate({
-        inputRange: [0, props.navBar ? props.navBar : 79],
-        outputRange: [props.height ? props.height : 150, props.navBar ? props.navBar : 79],        
+        inputRange: [0, orHeightView],
+        outputRange: [orHeightView, irHeightView],
         extrapolate: 'clamp'
     });
 
     let heightImage = moveCalc.interpolate({
-        inputRange: [0, 50],
+        inputRange: [0, orHeightView],
         outputRange: [50, 25],
         extrapolate: 'clamp'
     });
 
     let marginLeftImage = moveCalc.interpolate({
-        inputRange: [0, 50],
+        inputRange: [0, orHeightView],
         outputRange: [0, props.marginImage ? (props.marginImage * -1) : -280],
         extrapolate: 'clamp'
     });
@@ -30,7 +33,7 @@ function HeaderAnimated(props) {
     });
 
     return (
-        <>            
+        <>
             <View style={{ flex: 1 }}>
 
                 <Animated.View style={[styles.header, { backgroundColor: props.color ? props.color : '#333', height: heightView }]}>

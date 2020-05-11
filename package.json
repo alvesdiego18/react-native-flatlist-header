@@ -1,6 +1,6 @@
 {
   "name": "react-native-flatlist-header-animated",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Flatlist com um header animado conforme o scrol é realizado",
   "main": "index.js",
   "scripts": {
