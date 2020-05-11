@@ -5,14 +5,14 @@
 ## Custom FlatlistHeader
 > Component based 100% on React-Native's own Flatlist
 
-| Props | Value Type | Description |
-|--|--|--|
-| icon | Component RN | If you want to insert a component in the right corner |
-| image | Image path to be used | require if image local or {uri: url} from image web |
-| navBar | Number | Size the Nav bar should be when scrolling up |
-| height | Number | Size at which the component must occupy when scrolling down  |
-| color | Color Hexadecimal | Component background color, default #333 |
-| marginImage | Number | fine adjustments to the image position when scrolling up |
+| Props | Value Type | Description | Default |
+|--|--|--|--|
+| icon | Component RN | If you want to insert a component in the right corner | null |
+| image | Image path to be used | require if image local or {uri: url} from image web | null |
+| navBar | Number | Size the Nav bar should be when scrolling up | 79 |
+| height | Number | Size at which the component must occupy when scrolling down  | 150 |
+| color | Color Hexadecimal | Component background color | #333 |
+| marginImage | Number | fine adjustments to the image position when scrolling up | 280 |
 
 ## Install
 > npm i react-native-flatlist-header-animated
