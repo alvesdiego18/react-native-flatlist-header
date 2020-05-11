@@ -1,8 +1,11 @@
 # react-native-flatlist-header-animated
 
+## Install
+> npm i react-native-flatlist-header-animated
+
 ![SliderBox](assets/demo.gif)
 
-**Custom FlatlistHeader**
+## Custom FlatlistHeader
 > Component based 100% on React-Native's own Flatlist
 
 | Props | Value Type | Description |
