@@ -27,8 +27,8 @@ import { FlatlistHeader } from "react-native-flatlist-header-animated";
    renderItem={({item}) => <Item />}
    keyExtractor={item  =>  item.id}
    
-   icon={ <Componenet's from Icon showing }
-   image={require(' path image ')}
+   icon={/*<Componenet's from Icon showing*/}
+   image={require('path-image')}
    navBar={80}
    height={150}
    color={'#d13636'}
