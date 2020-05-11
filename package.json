@@ -1,20 +1,20 @@
 {
-  "name": "react-native-flatlist-header-animated",
-  "version": "1.0.2",
-  "description": "Flatlist com um header animado conforme o scrol é realizado",
+  "name": "react-native-flatlist-header",
+  "version": "1.0.0",
+  "description": "Flatlist with a header animated show image and icons",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvesdiego18/react-native-flatlist-header-animated.git"
+    "url": "git+https://github.com/alvesdiego18/react-native-flatlist-header.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alvesdiego18/react-native-flatlist-header-animated/issues"
+    "url": "https://github.com/alvesdiego18/react-native-flatlist-header/issues"
   },
-  "homepage": "https://github.com/alvesdiego18/react-native-flatlist-header-animated#readme"
+  "homepage": "https://github.com/alvesdiego18/react-native-flatlist-header#readme"
 }
